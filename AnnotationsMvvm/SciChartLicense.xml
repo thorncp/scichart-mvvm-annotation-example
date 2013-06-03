@@ -1,0 +1,8 @@
+﻿<LicenseContract>
+  <Customer>ABTTest</Customer>
+  <OrderId>123-456</OrderId>
+  <LicenseCount>1</LicenseCount>
+  <IsTrialLicense>true</IsTrialLicense>
+  <SupportExpires>03/17/2013 00:00:00</SupportExpires>
+  <KeyCode>tgIAAIr5+PCqC84BAEAnXqIizgEeAEAAQ3VzdG9tZXI9QUJUVGVzdDtPcmRlcklkPTEyMy00NTY7U3Vic2NyaXB0aW9uVmFsaWRUbz0xNy1NYXItMjAxMwOwM2brETTMlwg+Mpov3LckoyhY5bfbCkaJ/oMBIDCf8IPf1xQ6nG91smAamgoyfQ==</KeyCode>
+</LicenseContract>

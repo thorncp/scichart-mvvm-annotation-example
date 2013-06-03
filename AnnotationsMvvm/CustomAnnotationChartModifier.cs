@@ -30,11 +30,19 @@ namespace AnnotationsMvvm
             modifier.RebuildAnnotations();
         }
 
+        bool didBuildAnnotations;
+
         // Recreate all annotations
         private void RebuildAnnotations()
         {
             if (base.ParentSurface == null || LabelsSource == null)
                 return;
+
+            if (didBuildAnnotations)
+            {
+                MessageBox.Show("Alreay built annotations. Aborting.");
+                return;
+            }
 
             // Take a look at the base class, ChartModifierBase for a wealth of API 
             // methods and properties to manipulate the SciChartSurface
@@ -45,6 +53,8 @@ namespace AnnotationsMvvm
             {
                 annotationCollection.Add(new CustomTextAnnotation() { DataContext = item });
             }
+
+            didBuildAnnotations = true;
         }
 
         /// <summary>
